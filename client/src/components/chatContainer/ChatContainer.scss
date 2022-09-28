@@ -1,0 +1,12 @@
+.chat-container {
+  display: grid;
+  grid-template-rows: 10% 70% 20%;
+  gap: 0.1rem;
+  overflow: hidden;
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    grid-template-rows: 15% 70% 15%;
+  }
+  @media (max-width: 768px) {
+    grid-template-rows: 20% 60% 20%;
+  }
+}

@@ -1,0 +1,22 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  img {
+    height: 20rem;
+    @media (max-width: 768px) {
+      height: 15rem;
+    }
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  span {
+    color: #4e0eff;
+  }
+}

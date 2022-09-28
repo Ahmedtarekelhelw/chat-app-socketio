@@ -1,0 +1,17 @@
+.container {
+  .wrapper {
+    height: 85vh;
+    width: 85vw;
+    background-color: #00000076;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    @media screen and (min-width: 720px) and (max-width: 1080px) {
+      grid-template-columns: 35% 65%;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: none;
+      grid-template-rows: 40% 60%;
+      height: 90vh;
+    }
+  }
+}

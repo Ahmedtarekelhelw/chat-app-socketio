@@ -1,0 +1,106 @@
+.user-chat {
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  overflow: hidden;
+  background-color: #080420;
+  @media (max-width: 768px) {
+    grid-template-rows: 10% 65% 25%;
+  }
+  .brand {
+    img {
+      height: 2rem !important;
+      @media (max-width: 768px) {
+        height: 1.5rem !important;
+      }
+    }
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    overflow: auto;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
+    }
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+      &-thumb {
+        background-color: #ffffff39;
+        width: 0.1rem;
+        border-radius: 1rem;
+      }
+    }
+    .contact {
+      background-color: #ffffff34;
+      min-height: 5rem;
+      cursor: pointer;
+      width: 90%;
+      border-radius: 0.2rem;
+      padding: 0.4rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      transition: 0.5s ease-in-out;
+      @media (max-width: 768px) {
+        min-height: 4rem;
+        width: 95%;
+        justify-self: center;
+      }
+      .avatar {
+        img {
+          height: 3rem;
+        }
+      }
+      .username {
+        h3 {
+          color: #fff;
+        }
+      }
+    }
+    .selected {
+      background-color: #9a86f3;
+    }
+  }
+  .current-user {
+    background-color: #0d0d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: 768px) {
+      gap: 1rem;
+    }
+    .avatar {
+      @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      img {
+        height: 4rem;
+        max-inline-size: 100%;
+        @media (max-width: 768px) {
+          height: 2.5rem;
+        }
+      }
+    }
+    .username {
+      h2 {
+        color: #fff;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
